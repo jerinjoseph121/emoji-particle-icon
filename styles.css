@@ -1,0 +1,51 @@
+body {
+    background-color: grey;
+}
+
+.react-section {
+    margin: 25px;
+}
+
+.emoji-section {
+    visibility: hidden;
+}
+
+.emoji-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#react-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: 2px solid black;
+    position: fixed;
+}
+
+#react-button img {
+    width: 50%;
+    object-fit: contain;
+    display: inline-block;
+}
+
+#react-button div {
+    font-size: 25px;
+    color: black;
+}
+
+.particle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: -1 !important;
+    /* background: black; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-75%, -75%);
+    transition: all 2s linear;
+}

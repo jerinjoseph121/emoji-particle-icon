@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Emoji Icon</title>
+</head>
+<body>
+    <div class="react-section">
+        <div class="row emoji-section">
+            <div class="row">
+                <button type="button" class="btn btn-light emoji-button">⭐️</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-light emoji-button">❤️</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-light emoji-button">👏</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-light emoji-button">🎉</button>
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-light" id="react-button">
+                <img src="./imgs/thumbs_up.png" alt="React Icon!"/>
+                <div>React!</div>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+          $("#react-button").click(function(){
+            $(".emoji-section").slideToggle();
+          });
+        });
+    </script> -->
+</body>
+</html>
