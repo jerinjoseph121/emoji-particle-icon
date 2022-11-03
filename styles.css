@@ -1,7 +1,113 @@
 body {
     background-color: grey;
+    height: 100vh;
 }
 
+.ah-page {
+    margin: 0px;
+    height: 100vh;
+}
+
+.main-section {
+    background-color: green;
+    height: 100vh;
+    margin: 0px;
+    z-index: 10;
+}
+
+/* Canvas Area */
+.canvas-section {
+    background-color: black;
+    height: 92vh;
+    margin: 0px;
+}
+
+/* Bottom Section */
+.bottom-section {
+    background-color: white;
+    height: 80px;
+    margin: 0px;
+    box-shadow: 2px 0px 2px #e8e8e8;
+}
+
+.bottom-section-row {
+    padding: 10px 10px;
+}
+
+#ah-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 0px;
+}
+
+#attendee-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: gray;
+    padding: 10px 0px;
+}
+
+#details-btn {
+    --bs-btn-color: rgb(33, 117, 213);
+    --bs-btn-bg: white;
+    --bs-btn-hover-color: rgb(33, 117, 213);
+    --bs-btn-hover-bg: rgb(117, 159, 208);
+    --bs-btn-border-color: white;
+    --bs-btn-hover-border-color: rgb(117, 159, 208);
+}
+
+#attendee-count img{
+    width: 15%;
+    object-fit: contain;
+}
+
+#attendee-count p{
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+/* Side section */
+.side-section {
+    background-color: white;
+    height: 100vh;
+    margin: 0px;
+    z-index: 0;
+}
+
+.side-row {
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+.side-btn {
+    width: 100px;
+    height: 75px;
+    padding: 0px;
+    margin: auto;
+    --bs-btn-color: black;
+    --bs-btn-bg: white;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: rgb(195, 195, 196);
+    --bs-btn-border-color: white;
+    --bs-btn-hover-border-color: rgb(195, 195, 196);
+}
+
+.side-btn img {
+    width: 25%;
+    object-fit: contain;
+}
+
+.side-btn div {
+    font-size: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* React Button Styling */
 .react-section {
     margin: 25px;
 }
@@ -38,6 +144,7 @@ body {
     color: black;
 }
 
+/* Particle Styling */
 .particle {
     width: 10px;
     height: 10px;
