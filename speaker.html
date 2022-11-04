@@ -15,7 +15,7 @@
         <div class="container-fluid p-0 col-11 main-section">
             <!-- Canvas Section -->
             <div class="container-fluid p-0 row canvas-section">
-                <div class="col-1 p-0 d-flex align-items-center react-section">
+                <div class="col-1 d-flex align-items-center react-section">
                     <div class="row d-flex justify-content-center emoji-section">
                         <div class="row d-flex justify-content-center">
                             <button type="button" class="btn btn-light emoji-button">⭐️</button>
@@ -37,20 +37,28 @@
                         </button>
                     </div>
                 </div>
-                <div class="col p-0">
+                <div class="col">
                     <div class="container-fluid m-0 p-0 row passive-panels">
 
                     </div>
                     <div class="container-fluid m-0 p-0 row active-panel">
-                        <div class="container d-flex align-items-center justify-content-center panel">
-                            <div class="d-flex align-items-center justify-content-center panel-icon">JC</div>
+                        <div class="container row d-flex align-items-center justify-content-center panel">
+                            <div class="container col-4 panel-row"></div>
+                            <div class="container col-4 text-center panel-row">
+                                <div class="d-flex align-items-center justify-content-center panel-icon">JC</div>
+                            </div>
+                            <div class="container col-4 panel-row">
+                                <div class="container attendee-name">
+                                    Speaker
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="container-fluid m-0 p-0 row action-section">a
                         <div class="col-4 offset-4 d-flex align-items-end justify-content-center">
                             <div class="row action-mid-panel-speaker">
                                 <div class="col text-center align-self-center">
-                                    <button type="button" class="btn action-btn">
+                                    <button type="button" class="btn action-btn change-size-unmute-btn">
                                         <img src="./imgs/Mute.png" alt="Mute Icon"/>
                                     </button>
                                 </div>
@@ -106,12 +114,12 @@
                 </button>
             </div>
             <div class="container row side-row">
-                <button type="button" class="btn side-btn">
+                <button type="button" class="btn side-btn change-size-qa-btn">
                     <img src="./imgs/Q&A.png" alt="Q&A Icon"/>
                 </button>
             </div>
             <div class="container row side-row">
-                <button type="button" class="btn side-btn">
+                <button type="button" class="btn side-btn change-size-survey-btn">
                     <img src="./imgs/Survey.png" alt="Survey Icon"/>
                 </button>
             </div>
