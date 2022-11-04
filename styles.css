@@ -22,6 +22,59 @@ body {
     margin: 0px;
 }
 
+.passive-panels {
+    height: 5%;
+}
+
+.active-panel {
+    height: 80%;
+}
+
+.panel {
+    width: 80%;
+    height: 100%;
+    background-color: #34383f;
+    border-radius: 20px;
+}
+
+.panel-icon {
+    width: 250px;
+    height: 250px;
+    font-size: 5em;
+    background-color: #9e9e9e;
+    border-radius: 100%;
+}
+
+.action-section {
+    height: 15%;
+}
+
+.action-mid-panel {
+    width: 50%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #34383f;
+}
+
+.action-btn {
+    width: 100px;
+    height: 75px;
+    padding: 0px;
+    margin: auto;
+    --bs-btn-color: white;
+    --bs-btn-bg: #34383f;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #474c53;
+    --bs-btn-border-color: #34383f;
+    --bs-btn-hover-border-color: #474c53;
+}
+
+.action-btn img {
+    width: 25%;
+    object-fit: contain;
+}
+
 /* Bottom Section */
 .bottom-section {
     background-color: white;
@@ -109,10 +162,11 @@ body {
 
 /* React Button Styling */
 .react-section {
-    margin: 25px;
+    margin: 0px;
 }
 
 .emoji-section {
+    margin-top: 160px;
     visibility: hidden;
 }
 
@@ -131,6 +185,8 @@ body {
     border-radius: 25px;
     border: 2px solid black;
     position: fixed;
+    top: 80%;
+    left: 28px;
 }
 
 #react-button img {
