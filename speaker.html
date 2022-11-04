@@ -7,7 +7,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Attendee</title>
+    <title>Speaker</title>
 </head>
 <body>
     <div class="div container-fluid p-0 row ah-page">
@@ -43,15 +43,25 @@
                     </div>
                     <div class="container-fluid m-0 p-0 row active-panel">
                         <div class="container d-flex align-items-center justify-content-center panel">
-                            <div class="d-flex align-items-center justify-content-center panel-icon">JJ</div>
+                            <div class="d-flex align-items-center justify-content-center panel-icon">JC</div>
                         </div>
                     </div>
                     <div class="container-fluid m-0 p-0 row action-section">a
                         <div class="col-4 offset-4 d-flex align-items-end justify-content-center">
-                            <div class="row action-mid-panel">
+                            <div class="row action-mid-panel-speaker">
                                 <div class="col text-center align-self-center">
                                     <button type="button" class="btn action-btn">
-                                        <img src="./imgs/Participate.png" alt="Raise Hand Icon"/>
+                                        <img src="./imgs/Mute.png" alt="Mute Icon"/>
+                                    </button>
+                                </div>
+                                <div class="col text-center align-self-center">
+                                    <button type="button" class="btn action-btn">
+                                        <img src="./imgs/Start video.png" alt="Share Screen Icon"/>
+                                    </button>
+                                </div>
+                                <div class="col text-center align-self-center">
+                                    <button type="button" class="btn action-btn">
+                                        <img src="./imgs/Share screen.png" alt="Share Screen Icon"/>
                                     </button>
                                 </div>
                             </div>
@@ -111,7 +121,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script id="ah-script" 
         src="script.js"
-        isSpeakerParam="false">
+        isSpeakerParam="true">
     </script>
     <!-- <script>
         $(document).ready(function(){

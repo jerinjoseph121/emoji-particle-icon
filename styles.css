@@ -57,6 +57,14 @@ body {
     background-color: #34383f;
 }
 
+.action-mid-panel-speaker {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #34383f;
+}
+
 .action-btn {
     width: 100px;
     height: 75px;
@@ -71,7 +79,7 @@ body {
 }
 
 .action-btn img {
-    width: 25%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -150,14 +158,8 @@ body {
 }
 
 .side-btn img {
-    width: 25%;
+    width: 50%;
     object-fit: contain;
-}
-
-.side-btn div {
-    font-size: 15px;
-    margin-top: 10px;
-    text-decoration: none;
 }
 
 /* React Button Styling */
