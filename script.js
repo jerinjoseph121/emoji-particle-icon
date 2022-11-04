@@ -6,19 +6,30 @@ var reactLabel = reactBtn.getElementsByTagName("div")[0];
 var reactImg = reactBtn.firstElementChild;
 
 var isEmojiSectionActive = false;
-var isSpeaker = false;
 
-if(isSpeaker){
+let isSpeaker = document.getElementById("ah-script").getAttribute("isSpeakerParam");
+
+if(isSpeaker == "true"){
     reactImg.src = "./imgs/gift_box.png";
     reactImg.style.width = "75%";
     reactLabel.style.display = "none";
     reactBtn.disabled = true;
+
+    window.addEventListener('storage', () => {
+        // When local storage changes, dump the list to
+        // the console.
+        let emoji = window.localStorage.getItem('emojiParticle')
+        console.log(emoji);
+        if(emoji)
+            generateParticle(emoji);
+    });
+
 }
 
-function generateParticle(emoji, e) {
+function generateParticle(emoji) {
     console.log(emoji);
-    let targetHeight = e.target.offsetHeight;
-    let targetWidth = e.target.offsetWidth;
+    let targetHeight = reactBtn.offsetHeight;
+    let targetWidth = reactBtn.offsetWidth;
     // const particle = document.createElement("div");
     // particle.classList.add("emoji-particle");
     // particle.innerHTML = emoji;
@@ -73,6 +84,7 @@ Array.from(emojiBtnList).forEach(function(emojiBtn) {
         reactLabel.innerHTML = "React!";
         reactLabel.style.fontSize = "25px";
         let emoji = emojiBtn.textContent;
-        generateParticle(emoji, e);
+        localStorage.setItem('emojiParticle', emoji);
+        generateParticle(emoji);
     });
   });
